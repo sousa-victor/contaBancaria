@@ -68,6 +68,11 @@
                         Console.WriteLine("Transferência entre Contas\n\n");
 
                         break;
+
+                    case 9:
+                        Console.WriteLine("Programa encerrado!");
+                        break;
+
                     default:
                         Console.WriteLine("\nOpção Inválida!\n");
                         break;
