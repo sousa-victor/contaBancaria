@@ -1,0 +1,14 @@
+C:\Users\Victor\Desktop\contaBancaria\Banco\bin\Debug\net7.0\Banco.exe
+C:\Users\Victor\Desktop\contaBancaria\Banco\bin\Debug\net7.0\Banco.deps.json
+C:\Users\Victor\Desktop\contaBancaria\Banco\bin\Debug\net7.0\Banco.runtimeconfig.json
+C:\Users\Victor\Desktop\contaBancaria\Banco\bin\Debug\net7.0\Banco.dll
+C:\Users\Victor\Desktop\contaBancaria\Banco\bin\Debug\net7.0\Banco.pdb
+C:\Users\Victor\Desktop\contaBancaria\Banco\obj\Debug\net7.0\Banco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Victor\Desktop\contaBancaria\Banco\obj\Debug\net7.0\Banco.AssemblyInfoInputs.cache
+C:\Users\Victor\Desktop\contaBancaria\Banco\obj\Debug\net7.0\Banco.AssemblyInfo.cs
+C:\Users\Victor\Desktop\contaBancaria\Banco\obj\Debug\net7.0\Banco.csproj.CoreCompileInputs.cache
+C:\Users\Victor\Desktop\contaBancaria\Banco\obj\Debug\net7.0\Banco.dll
+C:\Users\Victor\Desktop\contaBancaria\Banco\obj\Debug\net7.0\refint\Banco.dll
+C:\Users\Victor\Desktop\contaBancaria\Banco\obj\Debug\net7.0\Banco.pdb
+C:\Users\Victor\Desktop\contaBancaria\Banco\obj\Debug\net7.0\Banco.genruntimeconfig.cache
+C:\Users\Victor\Desktop\contaBancaria\Banco\obj\Debug\net7.0\ref\Banco.dll
