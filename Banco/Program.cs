@@ -8,7 +8,7 @@ namespace Banco
         {
             int opcao = 9;
 
-            Conta c1 = new Conta(1, 123, 1, "Gaspar", 1000000.0m);
+            /*Conta c1 = new Conta(1, 123, 1, "Gaspar", 1000000.0m);
             Conta c2 = new Conta(2, 321, 1, "Victor", 2300.0m);
             c1.Visualizar();
             c1.SetNumero(345);
@@ -20,7 +20,19 @@ namespace Banco
 
             c1.Depositar(5000);
 
-            c1.Visualizar();
+            c1.Visualizar();*/
+
+            ContaCorrente cc1 = new ContaCorrente(2, 123, 1, "Samantha", 100000000.00M, 1000);
+            cc1.Visualizar();
+            ContaCorrente cc2 = new ContaCorrente(3, 532, 1, "Daniel", 376.00m, 500);
+            cc2.Visualizar();
+
+            ContaPoupanca cp1 = new ContaPoupanca(65, 43, 2, "Victor", 320000.00m, 27);
+            cp1.Visualizar();
+            ContaPoupanca cp2 = new ContaPoupanca(54, 4, 2, "Gabriel", 500000.00m, 1);
+            cp2.Visualizar();
+
+
 
             do
             {
