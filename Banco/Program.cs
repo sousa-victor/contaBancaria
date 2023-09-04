@@ -8,9 +8,9 @@ namespace Banco
         {
             int opcao = 9;
 
-            /*Conta c1 = new Conta(1, 123, 1, "Gaspar", 1000000.0m);
-            Conta c2 = new Conta(2, 321, 1, "Victor", 2300.0m);
-            c1.Visualizar();
+            //Conta c1 = new Conta(1, 123, 1, "Gaspar", 1000000.0m);  A CLASSE CONTA VIROU ABSTRACT, ENTÃO NÃO PODE SER INSTANCIADA!
+            //Conta c2 = new Conta(2, 321, 1, "Victor", 2300.0m);     CLASSE ABSTRATA SÓ PODER SER HERDADA
+            /*c1.Visualizar();
             c1.SetNumero(345);
             c1.Visualizar();
 
