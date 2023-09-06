@@ -18,7 +18,20 @@ namespace Banco.Controller
         //Métodos do CRUD
         public void Atualizar(Conta conta)
         {
-            throw new NotImplementedException();
+            var buscaConta = BuscarNaCollection(conta.GetNumero());
+            if (buscaConta != null)
+            {
+                var index = listaContas.IndexOf(buscaConta);
+                listaContas[index] = conta;
+                Console.WriteLine($"A conta número {conta.GetNumero()} foi atualizada com sucesso!");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"A conta numero {numero} não foi encontrada!");
+                Console.ResetColor();
+            }
+
         }
 
         public void Cadastrar(Conta conta)
@@ -29,7 +42,17 @@ namespace Banco.Controller
 
         public void Deletar(int numero)
         {
-            throw new NotImplementedException();
+            var conta = BuscarNaCollection(numero);
+
+            if (conta is not null)
+                if (listaContas.Remove(conta) == true)
+                    Console.WriteLine($"A conta número {numero} foi apagada com sucesso");
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"A conta {numero} não foi encontrada!");
+                    Console.ResetColor();
+                }
         }
 
         public void ListarTodas()
@@ -42,7 +65,16 @@ namespace Banco.Controller
 
         public void ProcurarPorNumero(int numero)
         {
-            throw new NotImplementedException();
+            var conta = BuscarNaCollection(numero);
+
+            if (conta is not null)
+                conta.Visualizar();
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"A conta {numero} não foi encontrada!");
+                Console.ResetColor();
+            }
         }
 
         // Métodos bancários
@@ -67,6 +99,17 @@ namespace Banco.Controller
         public int GerarNumero()
         {
             return ++numero;
+        }
+
+        public Conta? BuscarNaCollection(int numero)
+        {
+            foreach (var conta in listaContas)
+            {
+                if (conta.GetNumero() == numero)
+                    return conta;
+            }
+
+            return null;
         }
     }
 }
